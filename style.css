@@ -28,14 +28,14 @@ a {
 .hamburger {
   position: fixed;
   top: 2rem;
-  left: 3rem;
+  left: 24rem;
   font-size: 2.4rem;
 }
 
 .phone {
   position: fixed;
   top: 2rem;
-  right: 3rem;
+  right: 24rem;
   font-size: 2.4rem;
 }
 

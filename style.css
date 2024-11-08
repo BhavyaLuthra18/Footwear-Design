@@ -1,112 +1,125 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #cb021c;
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    transition:background 0.4s ease-in-out ;
+  background-color: #cb021c;
+  font-family: "Roboto", sans-serif;
+  transition: background 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
- a{
-    color: #fff ;
-    text-decoration: none ;
- }
+a {
+  color: #fff;
+  text-decoration: none;
+}
 
- 
-
-  .hamburger{
+.hamburger,
+.phone {
   position: fixed;
-  top: 2rem ;
-  left: 2rem ;
-  font-size: 3rem ;
+  font-size: 3rem;
+}
+
+.hamburger {
+  position: fixed;
+  top: 2rem;
+  left: 3rem;
+  font-size: 2.4rem;
 }
 
 .phone {
- position: fixed;
-  top: 2rem ;
-  right: 2rem ;
-  font-size: 3rem ;
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  font-size: 2.4rem;
 }
 
-.content{
-    text-align: center;
-    color: #fff;
-    font-size: 2rem ;
-    margin: 2rem ;
+.content {
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 2rem;
 }
 
-.content h2{
-    font-weight: normal ;
- margin: 0 ;
-
+.content h2 {
+  font-weight: normal;
+  margin: 0;
 }
-.content p{
- color:#1f1f1f ;
- font-weight: bold;
- margin: 0 ;
-}
-
-.carousel-container{
-    overflow: hidden;
-    position: relative;
-    height: 60vh ;
-    width: 100vw  ;
-    margin-top: 10rem ;
+.content p {
+  color: #000000;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
 }
 
-.carousel{
- display: flex;
- position: absolute;
- left: 0 ;
- top: 0;
- transform: translateX(0) ;
- transition: transform 0.4s ease-in-out;
- 
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  height: 70vh;
+  width: 90vw;
+  max-width: 800px;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
 }
 
- .slide{
-  width: 100vw;
+.carousel {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
- .slide img{
-    object-fit: cover ;
-    height: 400px;
-    width: 400px ;
+.slide img {
+  object-fit: cover;
+  width: 80%;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
 }
 
-.slide h1{
-    color: #fff;
-    font-size: 4rem ;
-    margin-top:-2rem ;
+.slide h1 {
+  color: #a29b9b;
+  font-size: 2rem;
+  margin-top: 1rem;
 }
-.slide a{
-    background-color: #1f1f1f;
-    padding: 1rem 2rem ;
-    font-size: 1.5rem ;
+.slide a {
+  background-color: #1f1f1f;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border-radius: 5px;
 }
 
- .arrow{
-    background-color: transparent ;
-    border: 0  ;
-    cursor: pointer;
-    position: absolute;
-    top: 30% ;
-    transform: translateY(-50%) ;
-    font-size: 5rem ;
-    color: black;
-    opacity: 0.5 ;
- }
+.arrow {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  color: rgba(7, 6, 6, 0.7);
+  transition: color 0.3s;
+}
 
-.left-arrow{
+.arrow:hover {
+  color: #000000;
+}
+
+.left-arrow {
   left: 2rem;
-
 }
 
-.right-arrow{
- right: 2rem;
-
-
+.right-arrow {
+  right: 2rem;
 }

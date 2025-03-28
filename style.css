@@ -20,6 +20,7 @@ a {
   text-decoration: none;
 }
 
+/*--------------hamburger and phone icon styling-------------------*/
 .hamburger,
 .phone {
   position: fixed;
@@ -40,6 +41,7 @@ a {
   font-size: 2.4rem;
 }
 
+/*-----------------------------------Content-Styling--------------------------------*/
 .content {
   text-align: center;
   color: #fff;
@@ -58,6 +60,7 @@ a {
   margin: 0;
 }
 
+/*--------------Carousel-Styling-------------------*/
 .carousel-container {
   overflow: hidden;
   position: relative;
@@ -74,6 +77,7 @@ a {
   transition: transform 0.4s ease-in-out;
 }
 
+/*--------------Slider-Styling-------------------*/
 .slide {
   min-width: 100%;
   flex-direction: column;
